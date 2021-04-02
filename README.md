@@ -1,6 +1,6 @@
 #  Gestion des Utilisateurs Opération CRUD  avec JEE
 
-Apllication en JEE  permettant de faire des opérations des utilisateursavec l' API JPA.
+Apllication en JEE avec l' API JPA permettant de faire des CRUD utilisateurs .
 
 # Fonctionnalités
 
@@ -12,5 +12,6 @@ Apllication en JEE  permettant de faire des opérations des utilisateursavec l' 
 
    -Technologie:  JAVAEE ,  JPA.
    -Database:  Mysql .
+   -P attern implémenté : DAO.
    
    
