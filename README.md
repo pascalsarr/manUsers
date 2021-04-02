@@ -11,7 +11,9 @@ Apllication en JEE avec l' API JPA permettant de faire des CRUD utilisateurs .
 # Outils et Technologies 
 
    -Technologie:  JAVAEE ,  JPA.
+   
    -Database:  Mysql .
-   -P attern implémenté : DAO.
+   
+   -Pattern implémenté : DAO.
    
    
