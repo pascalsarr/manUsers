@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence 
+             http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
+    <persistence-unit name="man_users_pu" transaction-type="JTA">
+        <!-- transaction-type = (RESOURCE_LOCAL | JTA) -->
+       <jta-data-source>jdbc/_ret</jta-data-source> 
+    	<!-- Définition du framework ORM utilisé (ici, EclipseLink) -->
+    	<class>entities.Utilisateur</class>
+    	<!-- Pour la découverte automatique des classes d'Entité
+    		Permet de ne pas utiliser une succession de <class> pour énumérer les classes des entités gérées par ce P.U
+    	-->
+        <exclude-unlisted-classes>false</exclude-unlisted-classes>
+        
+        <properties>
+            <!-- Configuration de la  BDD -->
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/javaee" />
+            <property name="javax.persistence.jdbc.user" value="root" />
+            <property name="javax.persistence.jdbc.password" value="" />
+ 			
+ 			<!-- Pour la définition du niveau de Logging. Peut prendre les valeurs :
+ 				OFF, SEVERE, WARNING, INFO, CONFIG, FINE, FINER, FINEST, ALL
+ 			-->
+			<property name="eclipselink.logging.level" value="FINE"/>
+			<property name="eclipselink.logging.level.sql" value="FINE"/>
+			
+			<!-- Pour la génération des tables à partir des entités
+				"create-tables" ==> Crée les tables si elles n'existent pas
+				"drop-and-create-tables" ==> Supprime puis crée les tables
+			-->
+            <property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>
+        </properties>
+ 
+    </persistence-unit>
+</persistence>
