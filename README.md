@@ -16,4 +16,4 @@ Apllication en JEE avec l' API JPA permettant de faire des CRUD utilisateurs .
    
    -Pattern implémenté : DAO.
    
-   
+   -Serveur : Tomcat Apache 9.
