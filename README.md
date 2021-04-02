@@ -1,6 +1,6 @@
 #  Gestion des Utilisateurs Opération CRUD  avec JEE
 
-Apllication en JEE avec l' API JPA permettant de faire des CRUD utilisateurs .
+Apllication en JEE avec l' API JPA permettant de faire des Oprérations CRUD utilisateurs.
 
 # Fonctionnalités
 
